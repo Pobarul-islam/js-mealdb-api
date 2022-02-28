@@ -12,8 +12,11 @@ const searchBtn = () => {
 
 const displaySearchResult = (meals) => {
   // console.log(meals)
-  const searchResult = document.getElementById("search-result");
-  meals.forEach((meal) => {
+    const searchResult = document.getElementById("search-result");
+    searchResult.textContent = '';
+   
+    meals.forEach((meal) => {
+       
     // console.log(meal);
     const div = document.createElement("div");
     div.classList.add("col");
